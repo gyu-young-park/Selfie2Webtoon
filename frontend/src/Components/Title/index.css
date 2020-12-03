@@ -1,0 +1,25 @@
+
+.container-title{
+    position: relative;
+    margin-top: 20px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.title-text{
+    font-size: 40px;
+    font-weight: 500;
+    font-family: 'Black Han Sans', sans-serif;
+}
+
+.desc-text{
+
+    font-size: 30px;
+    font-weight: 500;
+    font-family: 'Noto Sans KR', sans-serif;
+    margin: 0px auto;
+}

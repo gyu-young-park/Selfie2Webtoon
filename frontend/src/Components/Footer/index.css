@@ -1,0 +1,22 @@
+.footer-container{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 480px;
+    height: 300px;
+    font-family: 'Noto Sans KR', sans-serif;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.footer-title{
+    font-size:20px;
+    margin-bottom: 10px;
+}
+
+.footer-information{
+    border-top: 5px solid #e9e8e2
+}
+
+.footer-information-text{
+    margin-top: 30px;
+}
