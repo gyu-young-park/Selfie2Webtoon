@@ -14,9 +14,9 @@ const Footer = ({} : Props) => {
             
             <div className="footer-information">
                 <div className="footer-information-text">
-                    프론트 엔드, 백엔드 : gyoue200125@gmail.com<br/>
-                    머신러닝 : 김민수, 신준범<br/>
-                    github 링크 : <a href="https://github.com/gyu-young-park/Selfie2Webtoon">Github</a><br/>
+                    <div className="footer-information-text-item">프론트 엔드, 백엔드 : gyoue200125@gmail.com</div>
+                    <div className="footer-information-text-item">머신러닝 : 김민수, 신준범</div>
+                    <div className="footer-information-text-item">github 링크 : <a href="https://github.com/gyu-young-park/Selfie2Webtoon">Github</a><br/></div>
                 </div>
                 
             </div>

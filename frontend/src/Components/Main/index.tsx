@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import './index.css'
-import cloud from './img/cloud_uploade.png'
 import axios from 'axios'
 
 const config = {
@@ -14,6 +13,7 @@ const Main = () => {
     const onFileHandler = (e: React.ChangeEvent<HTMLInputElement>) => {
         if(e.target.files![0] === null ||e.target.files![0] === undefined ) return;
         setFile(e.target.files![0])
+        setResultImage(URL.createObjectURL(e.target.files![0]))
     }
     const onSubmitHandler = async (e : React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
         e.preventDefault();
@@ -24,6 +24,7 @@ const Main = () => {
         const image = result.data.image.split('\'')[1]
         console.log(image)
         //바이트로 오기 떄문에 다음처럼 처리해주어야한다.
+        console.log(file.name)
         setResultImage('data:image/jpeg;base64,' + image)
     }
     return(
